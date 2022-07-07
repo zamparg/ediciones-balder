@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from './CartWidget'
 
 const NavBar = () =>{
     return(
@@ -7,7 +8,7 @@ const NavBar = () =>{
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                 <img src={require("../imgs/logoAE.svg").default} alt="" width="30" height="24" className="d-inline-block align-text-top"/>
-                Cursos de Arte
+                Arte-Escuela
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"/>
@@ -27,8 +28,11 @@ const NavBar = () =>{
                             <a className="nav-link active" aria-current="page" href="#">Craft</a>
                         </li>
                     </ul>
+                    <CartWidget/>
                 </div>
+                
             </div>
+            
         </nav>   
         </>
     );
