@@ -1,4 +1,8 @@
+import ItemCount from "./ItemCount"
+
 const Item =(props)=>{
+    
+
     return(
     <>
      <div className="card" style={{width: '18rem'}}>
@@ -8,6 +12,8 @@ const Item =(props)=>{
             <h6 className="card-subtitle mb-2 text-muted">{props.profesor}</h6>
             <p className="card-text">{props.descripcion}</p>
             <p className="card-text">$ {props.valor}</p>
+            <p className="card-text">stock: {props.stock}</p>
+            <div><ItemCount stock={props.stock} initial ={props.initial}/></div>
             <a href="#" className="btn btn-primary">Agregar al Carrito</a>
         </div>
     </div>
