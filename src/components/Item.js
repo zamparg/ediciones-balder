@@ -6,7 +6,7 @@ const Item =(props)=>{
     return(
     <>
      <div className="card" style={{width: '18rem'}}>
-     <img src={require("../imgs/Parsifal.jpg").default} className="card-img-top" alt="..."/>
+     <img src={"imgs/Parsifal.jpg"} className="card-img-top" alt="..."/>
         <div className="card-body">
             <h5 className="card-title">{props.titulo}</h5>
             <h6 className="card-subtitle mb-2 text-muted">{props.profesor}</h6>
@@ -14,7 +14,7 @@ const Item =(props)=>{
             <p className="card-text">$ {props.valor}</p>
             <p className="card-text">stock: {props.stock}</p>
             <div><ItemCount stock={props.stock} initial ={props.initial}/></div>
-            <a href="#" className="btn btn-primary">Agregar al Carrito</a>
+            <button  className="btn btn-primary" >Agregar al Carrito</button>
         </div>
     </div>
     </>)

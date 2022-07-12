@@ -1,11 +1,15 @@
 
 import Badge, { BadgeProps } from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import React, {useState} from 'react' ;
+
 
 const CartWidget= () => {
+  const [cartNumber, setCartNumber] = useState (4);
+
   return (
     
-      <Badge badgeContent={4} color="secondary">
+      <Badge badgeContent={cartNumber} color="secondary">
         <ShoppingCartIcon />
       </Badge>
     
