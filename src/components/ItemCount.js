@@ -5,6 +5,7 @@ const ItemCount =(props)=>{
     let stock = props.stock
 
 const [quantity, setQuantity] =useState (props.initial);
+    
     const leftButton =()=>{
        if (quantity>1){
        setQuantity(quantity-1)}
