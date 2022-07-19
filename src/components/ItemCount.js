@@ -17,9 +17,9 @@ const [quantity, setQuantity] =useState (props.initial);
 
     return(
     <>
-    <button className="btn btn-secondary" onClick={leftButton}>-</button>
-    {quantity}
-    <button className="btn btn-secondary" onClick={rightButton}>+</button>
+    <button className="btn btn-secondary m-2" onClick={leftButton}>-</button>
+    <span >{quantity}</span>
+    <button className="btn btn-secondary m-2" onClick={rightButton}>+</button>
     </>
 )}
 

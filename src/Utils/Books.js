@@ -2,8 +2,8 @@ const books = [
     {   
         miniatura:"imgs/Parsifal.jpg",
         titulo:"Parsifal",
-        autor:"",
-        descripcion:"",
+        autor:"Wolfram Von Eschenbach",
+        descripcion:"Parzival es un poema épico medieval germano, obra de Wolfram von Eschenbach. Data del siglo XIII y su argumento es la vida de sir Perceval, caballero de la Mesa Redonda y de la corte del rey Arturo, y su búsqueda del Santo Grial.",
         valor:1500,
         stock:5,
         initial:1,
@@ -11,7 +11,7 @@ const books = [
     {
         miniatura:"imgs/Parsifal.jpg",
         titulo:"El camino de los Sueños",
-        autor:"",
+        autor:"Fraser Boa",
         descripcion:"",
         valor:1500,
         stock:5,
@@ -20,7 +20,7 @@ const books = [
     {
         miniatura:"imgs/Parsifal.jpg",
         titulo:"Hamlet",
-        autor:"",
+        autor:"william Shakespeare",
         descripcion:"",
         valor:1500,
         stock:5,
@@ -29,7 +29,7 @@ const books = [
     {
         miniatura:"imgs/Parsifal.jpg",
         titulo:"El conde de Montecristo",
-        autor:"",
+        autor:"Alejandro Dumas",
         descripcion:"",
         valor:1500,
         stock:5,
