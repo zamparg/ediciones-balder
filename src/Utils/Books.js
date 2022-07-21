@@ -7,6 +7,7 @@ const books = [
         valor:1500,
         stock:5,
         initial:1,
+        categoryId:1
     },
     {
         miniatura:"imgs/Parsifal.jpg",
@@ -16,6 +17,7 @@ const books = [
         valor:1500,
         stock:5,
         initial:1,
+        categoryId:1
     },
     {
         miniatura:"imgs/Parsifal.jpg",
@@ -25,6 +27,7 @@ const books = [
         valor:1500,
         stock:5,
         initial:1,
+        categoryId:1
     },
     {
         miniatura:"imgs/Parsifal.jpg",
@@ -34,6 +37,7 @@ const books = [
         valor:1500,
         stock:5,
         initial:1,
+        categoryId:1
     },
 ]
 

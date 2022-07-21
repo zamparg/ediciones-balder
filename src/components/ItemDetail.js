@@ -7,7 +7,7 @@ const ItemDetail =({data})=>{
 
     <div className="row">
         <div className="col-5 col-sm">
-            <img src={data.miniatura} className="img-fluid " alt="..."/>
+            <img src={`../${data.miniatura}`} className="img-fluid " alt={data.titulo}/>
         </div>
             <div className="col-7 col-sm">
             <h1 className="display-4">{data.titulo}</h1>

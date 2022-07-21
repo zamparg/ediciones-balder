@@ -1,5 +1,5 @@
 
-import Badge, { BadgeProps } from '@mui/material/Badge';
+import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import React, {useState} from 'react' ;
 

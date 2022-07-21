@@ -1,31 +1,27 @@
 import ItemList from '../components/ItemList'
-import Books from "../Utils/Books"
 import React, {useState, useEffect} from 'react' ;
-
+import {useParams} from 'react-router'
+import customFetch from '../Utils/customFetch';
+import BDBooks from "../Utils/BDBooks"
 
 
 const ItemListContainer = () => {
     const [data,setData]=useState([])
+    const { id } = useParams()
     
 
     useEffect(()=>{
-        let is_ok=true
-        
-        const getData = new Promise ((resolve,reject)=>{
-                if (is_ok){
-                    setTimeout(() => {
-                        resolve (Books)
-                    }, 2000);
-                }else{
-                    reject("error")
-                }
-            })
-        
-        getData.then(result => setData(result))
-            .catch(err => setData(err))
-
-    }, [])
-
+        if (id === undefined){
+            customFetch (2000, BDBooks)
+                .then(result=> setData(result))
+                .catch (err=> setData(err))
+        } else {
+            customFetch(2000, BDBooks.filter(item=> item.categoryId.toLowerCase() === id))
+                .then(result=> setData(result))
+                .catch (err=> setData(err))
+    }
+     }, [id])
+    
 
 
 
