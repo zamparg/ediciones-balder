@@ -1,10 +1,10 @@
-import React, {useState} from 'react' 
+import React, {useState, useEffect} from 'react' 
 
 const ItemCount =(props)=>{
     
     let stock = props.stock
 
-const [quantity, setQuantity] =useState (props.initial);
+const [quantity, setQuantity] =useState (parseInt(props.initial));
     
     const leftButton =()=>{
        if (quantity>1){
@@ -14,6 +14,10 @@ const [quantity, setQuantity] =useState (props.initial);
         if (quantity<stock){
             setQuantity(quantity+1)
     }}
+
+    useEffect(()=>{
+        setQuantity(parseInt(props.initial))
+    },[parseInt(props.initial)])
 
     return(
     <>

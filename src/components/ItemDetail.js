@@ -1,6 +1,9 @@
 import ItemCount from "./ItemCount"
 
 const ItemDetail =({data})=>{
+
+
+
         return(
     <>  
     
