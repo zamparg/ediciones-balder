@@ -1,7 +1,6 @@
 import ItemCount from "./ItemCount"
 import { Link } from 'react-router-dom';
 
-
 const Item =({info})=>{
     
 
@@ -16,8 +15,9 @@ const Item =({info})=>{
             <p className="card-text">{info.descripcion}</p>
             <p className="card-text">$ {parseInt(info.valor)}</p>
             <p className="card-text">stock: {parseInt(info.stock)}</p>
-            <div><ItemCount stock={parseInt(info.stock)} initial ={parseInt(info.initial)}/></div>
-            <button  className="btn btn-primary" >Agregar al Carrito</button>
+            {/* <div><ItemCount stock={parseInt(info.stock)} initial ={0}/></div>
+            <AddToCart/> */}
+            
             <Link to={`/item/${info.id}`}><button  className="btn btn-secondary" >Ver más</button></Link>
         </div>
     </div>
