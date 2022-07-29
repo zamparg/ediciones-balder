@@ -8,7 +8,7 @@ const Item =({info})=>{
     <>  
     
      <div className="card" style={{width: '18rem'}}>
-     <img src={`../${info.miniatura}`} className="card-img-top" alt={info.titulo}/>
+     <img src={info.miniatura} className="card-img-top" alt={info.titulo}/>
         <div className="card-body">
             <h5 className="card-title">{info.titulo}</h5>
             <h6 className="card-subtitle mb-2 text-muted">{info.autor}</h6>
