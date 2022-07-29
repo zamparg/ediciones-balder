@@ -22,7 +22,7 @@ export const CartContextProvider=({children})=>{
             recortedList = cartList.find(product => product.id !== item.id)
             newCartList=[...recortedList, product]
         }else {
-            product = {...item, quantity:{quantity}};
+            product = {...item, quantity:quantity};
             newCartList = [...cartList, product]
         }
 
@@ -37,8 +37,27 @@ export const CartContextProvider=({children})=>{
 
     const removeProduct = (id) => setCartList(cartList.filter(prod => prod.id !== id))
 
+    const addItem = (id) =>{
+        let newCartList
+        let product = cartList.find(product => product.id === id); 
+        let recortedList = cartList.find(product => product.id !== id)
+        product.quantity += 1
+        newCartList=[...recortedList, product]
+        setCartList (newCartList)
+    }    
+    
+    const restItem = (id) =>{
+        let newCartList
+        let product = cartList.find(product => product.id === id); 
+        let recortedList = cartList.find(product => product.id !== id)
+        product.quantity -= 1
+        newCartList=[...recortedList, product]
+        setCartList (newCartList)
+    }
+
+
     return(
-        <CartContext.Provider value={{cartList, addToCart, clearCart, isInCart, removeProduct}}>
+        <CartContext.Provider value={{cartList, addToCart, clearCart, isInCart, removeProduct, addItem, restItem}}>
             {children}
         </CartContext.Provider>
     )
