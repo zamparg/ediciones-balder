@@ -6,6 +6,7 @@ export const CartContextProvider=({children})=>{
     
     const [cartList, setCartList] = useState([])
     
+
     const isInCart = (id) => {
         return cartList.findIndex(el => el.id === id)
     }
@@ -33,19 +34,21 @@ export const CartContextProvider=({children})=>{
         setCartList([])
     }
 
-    
 
     const removeProduct = (id) => setCartList(cartList.filter(prod => prod.id !== id))
 
     const addItem = (id) =>{
         let newCartList
+        let recortedList
         let product = cartList.find(product => product.id === id); 
-        let recortedList = cartList.find(product => product.id !== id)
+        recortedList = cartList.find(product => product.id !== id);
         product.quantity += 1
-        newCartList=[...recortedList, product]
+        
+        newCartList = [...recortedList, product]
+        console.log(newCartList)
         setCartList (newCartList)
     }    
-    
+
     const restItem = (id) =>{
         let newCartList
         let product = cartList.find(product => product.id === id); 
@@ -55,9 +58,27 @@ export const CartContextProvider=({children})=>{
         setCartList (newCartList)
     }
 
+    const totalPrice =()=>{
+        let total=0
+        cartList.forEach(element => {
+            total += (element.valor * element.quantity)
+            
+        });
+        return total
+    }
+    
+    const totalProduct =()=>{
+        let total=0
+
+        cartList.forEach(element => {
+            total += element.quantity
+        });
+
+        return total
+    }
 
     return(
-        <CartContext.Provider value={{cartList, addToCart, clearCart, isInCart, removeProduct, addItem, restItem}}>
+        <CartContext.Provider value={{cartList, addToCart, clearCart, isInCart, removeProduct, addItem, restItem, totalPrice, totalProduct}}>
             {children}
         </CartContext.Provider>
     )

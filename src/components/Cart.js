@@ -4,8 +4,6 @@ import { Link } from "react-router-dom"
 
 const Cart =()=>{
     const test = useContext(CartContext)
-    console.log (test)
-
 
 return (
     <>
@@ -20,16 +18,16 @@ return (
         
             <div className="row card-body">
                 <div className="col-3">
-                    <img src={item.miniatura} className="rounded img-thumbnail miniatura"/>
+                    <img src={item.miniatura} className="rounded img-thumbnail miniatura" alt={item.titulo}/>
                 </div>
                 <div className="col">
                     <h5 className="card-title">{item.titulo}</h5>
                     <p className="card-text">{item.autor}</p>
                     <p className="card-text">Valor: ${item.valor}</p>
 
-                    <button className="btn btn-secondary m-2" onClick={()=> test.restItem(item.id)}>-</button>
+                    {/* <button className="btn btn-secondary m-2" onClick={()=> test.restItem(item.id)}>-</button>
                     <span >{item.quantity}</span>
-                    <button className="btn btn-secondary m-2" onClick={()=> test.addItem(item.id)}>+</button>
+                    <button className="btn btn-secondary m-2" onClick={()=> test.addItem(item.id)}>+</button> */}
 
               </div>
               <div className="col ">
@@ -42,14 +40,31 @@ return (
         ))
     }
         <div className="row"> 
-        <div className="col ">
-                    <h5 className="card-title ">Total: ???</h5>
-                    <button href="#" className="btn btn-warning" onClick={()=> test.clearCart()}>Finalizar Compra</button>
-                    <button href="#" className="btn btn-primary" onClick={()=> test.clearCart()}>Eliminar Carrito</button>
-                    <Link to="/"><button  className="btn btn-primary" >Seguir comprando</button></Link>
+                    {
+                        (test.cartList.length >0) 
+                        ?<>
+                            <div className="col ">
+                                <button href="#" className="btn btn-primary" onClick={()=> test.clearCart()}>Eliminar Carrito</button>
+                            </div>
+                            <div className="col">
+                                <Link to="/"><button  className="btn btn-primary" >Seguir comprando</button></Link>
+                            </div>
+                            <div className="col ">
+                                <button href="#" className="btn btn-warning" onClick={()=> test.clearCart()}>Finalizar Compra</button>
+                            </div> 
+                            <div className="col ">
+                                <h5 className="card-title ">Total: ${test.totalPrice()}</h5>
+                            </div>
+                        </>
+                        :<div>
+                            <span>Carrito Vacío...</span>
+                            <div className="col"><Link to="/"><button  className="btn btn-primary" >Seguir comprando</button></Link></div>
+                        </div>
+                    }
+                    
               </div>
-            </div>
-       </div>
+              </div>
+            
     </>
 )
 }

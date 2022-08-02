@@ -1,8 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from './CartWidget'
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
 
 const NavBar = () =>{
+    const test = useContext(CartContext)
     return(
         <>
          <nav className="navbar navbar-expand-lg bg-light">
@@ -47,7 +50,17 @@ const NavBar = () =>{
                             <Link to={"/category/religion"} className="nav-link active" aria-current="page" >Religión</Link>
                         </li>
                     </ul>
+                    <Link to={"/Cart"}>
+                    Carrito de compras
+                    </Link>
+                    {
+                        (test.cartList.length >0)
+                        ?<Link to={"/Cart"}>
                     <CartWidget/>
+                    </Link>
+                        :""
+                    }
+                    
                 </div>
                 
             </div>

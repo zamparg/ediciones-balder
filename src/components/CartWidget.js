@@ -1,15 +1,19 @@
 
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import React, {useState} from 'react' ;
+import React, {useContext} from 'react' ;
+import {CartContext} from './CartContext';
 
 
 const CartWidget= () => {
-  const [cartNumber, setCartNumber] = useState (4);
 
+  const test = useContext(CartContext)
+  
+  
+  
   return (
     
-      <Badge badgeContent={cartNumber} color="secondary">
+      <Badge badgeContent={test.totalProduct()|| "" } color="secondary">
         <ShoppingCartIcon />
       </Badge>
     

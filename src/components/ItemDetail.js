@@ -13,7 +13,7 @@ const ItemDetail =({item})=>{
         alert('Has seleccionado ' + quantity + ' items');
         setItemCount(quantity);
         test.addToCart(item, quantity);
-        
+
         }
     
 
@@ -37,7 +37,7 @@ const ItemDetail =({item})=>{
             <div>
                 {itemCount ===0 
                 ?<ItemCount stock={item.stock} initial={0} onAdd={onAdd}/>
-                :<Link to='/Cart'><button  className="btn btn-warning">Ir al Carrito</button></Link>
+                :<Link to='/Cart'><button  className="btn btn-warning">Terminar mi Compra</button></Link>
             }
                 
             </div>
