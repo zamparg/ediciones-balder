@@ -23,13 +23,13 @@ const ItemDetail =({item})=>{
 
     <div className="row">
         <div className="col-5 col-sm">
-            <img src={item.miniatura} className="img-fluid " alt={item.titulo}/>
+            <img src={item.thumbnail} className="img-fluid " alt={item.title}/>
         </div>
             <div className="col-7 col-sm">
-            <h1 className="display-4">{item.titulo}</h1>
-            <h2 className="display-9">{item.autor}</h2>
+            <h1 className="display-4">{item.title}</h1>
+            <h2 className="display-9">{item.author}</h2>
         
-            <p className="lead">{item.descripcion}</p>
+            <p className="lead">{item.description}</p>
             <hr className="my-4"/>
             <p className="display-6">$ {item.valor}</p>
             <p className="display-6">Stock: {item.stock}</p>

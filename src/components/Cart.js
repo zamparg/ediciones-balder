@@ -2,16 +2,19 @@ import { useContext } from "react"
 import { CartContext} from './CartContext'
 import { Link } from "react-router-dom"
 
+
 const Cart =()=>{
     const test = useContext(CartContext)
 
 return (
     <>
+    
     <div className="card">
         <div className="card-header">
               <h2 className="text-center">Carrito de compras</h2>
+              
         </div> 
-                 
+        
             {
             
         test.cartList.length > 0 && test.cartList.map(item => (
@@ -40,6 +43,7 @@ return (
         ))
     }
         <div className="row"> 
+        
                     {
                         (test.cartList.length >0) 
                         ?<>
@@ -61,8 +65,9 @@ return (
                             <div className="col"><Link to="/"><button  className="btn btn-primary" >Seguir comprando</button></Link></div>
                         </div>
                     }
-                    
+                          
               </div>
+              
               </div>
             
     </>

@@ -1,5 +1,13 @@
 const BDBooks = [
-{id:"1",titulo:"Sobre el Amor y Otros Ensayos",autor:"A. R. Orage",descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada nisi scelerisque purus volutpat aliquet. Phasellus et aliquet est. Donec eget nulla odio. Nullam non eros sem.",miniatura:"https://res.cloudinary.com/zamparg/image/upload/v1659034433/ediciones-balder/test_vqhlb3.jpg",valor:"1130",stock:"5",initial:"1",categoryId:" Psicologia"}
+{id:"1",
+titulo:"Sobre el Amor y Otros Ensayos",
+autor:"A. R. Orage",
+descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada nisi scelerisque purus volutpat aliquet. Phasellus et aliquet est. Donec eget nulla odio. Nullam non eros sem.",
+miniatura:"https://res.cloudinary.com/zamparg/image/upload/v1659034433/ediciones-balder/test_vqhlb3.jpg",
+valor:"1130",
+stock:"5",
+initial:"1",
+categoryId:" Psicologia"}
 ,
 {id:"2",titulo:"Ingreso al Camino medio",autor:"Acharia Chandrakirti",descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada nisi scelerisque purus volutpat aliquet. Phasellus et aliquet est. Donec eget nulla odio. Nullam non eros sem.",miniatura:"https://res.cloudinary.com/zamparg/image/upload/v1659034433/ediciones-balder/test_vqhlb3.jpg",valor:"1660",stock:"5",initial:"1",categoryId:"Budismo"}
 ,
