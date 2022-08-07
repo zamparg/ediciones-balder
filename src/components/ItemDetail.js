@@ -31,13 +31,16 @@ const ItemDetail =({item})=>{
         
             <p className="lead">{item.description}</p>
             <hr className="my-4"/>
-            <p className="display-6">$ {item.valor}</p>
+            <p className="display-6">$ {item.price}</p>
             <p className="display-6">Stock: {item.stock}</p>
 
             <div>
                 {itemCount ===0 
                 ?<ItemCount stock={item.stock} initial={0} onAdd={onAdd}/>
-                :<Link to='/Cart'><button  className="btn btn-warning">Terminar mi Compra</button></Link>
+                :<>
+                <Link to="/"><button  className="btn btn-primary" >Seguir comprando</button></Link>
+                <Link to='/Cart'><button  className="btn btn-warning">Terminar mi Compra</button></Link>
+                </>
             }
                 
             </div>

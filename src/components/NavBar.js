@@ -20,34 +20,34 @@ const NavBar = () =>{
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link to={"/category/psicologia"} className="nav-link active" aria-current="page" >Psicología</Link>
+                            <Link to={"/category/Psicologia"} className="nav-link active" aria-current="page" >Psicología</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/astrologia"} className="nav-link active" aria-current="page" >Astrología</Link>
+                            <Link to={"/category/Astrologia"} className="nav-link active" aria-current="page" >Astrología</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/filosofia"} className="nav-link active" aria-current="page" >Filosofía</Link>
+                            <Link to={"/category/Filosofia"} className="nav-link active" aria-current="page" >Filosofía</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/literatura"} className="nav-link active" aria-current="page" >Literatura</Link>
+                            <Link to={"/category/Literatura"} className="nav-link active" aria-current="page" >Literatura</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/infantiles"} className="nav-link active" aria-current="page" >Infantiles</Link>
+                            <Link to={"/category/Infantiles"} className="nav-link active" aria-current="page" >Infantiles</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/esoterismo"} className="nav-link active" aria-current="page" >Esoterismo</Link>
+                            <Link to={"/category/Esoterismo"} className="nav-link active" aria-current="page" >Esoterismo</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/arte"} className="nav-link active" aria-current="page" >Arte</Link>
+                            <Link to={"/category/Arte"} className="nav-link active" aria-current="page" >Arte</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/educacion"} className="nav-link active" aria-current="page" >Educación</Link>
+                            <Link to={"/category/Educacion"} className="nav-link active" aria-current="page" >Educación</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/poesia"} className="nav-link active" aria-current="page" >Poesía</Link>
+                            <Link to={"/category/Poesia"} className="nav-link active" aria-current="page" >Poesía</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/category/religion"} className="nav-link active" aria-current="page" >Religión</Link>
+                            <Link to={"/category/Religion"} className="nav-link active" aria-current="page" >Religión</Link>
                         </li>
                     </ul>
                     <Link to={"/Cart"}>

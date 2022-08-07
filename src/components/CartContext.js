@@ -14,7 +14,6 @@ export const CartContextProvider=({children})=>{
     const addToCart = (item, quantity) => {
         
         let newCartList
-
         let product = cartList.find(product => product.id === item.id);
 
         if (isInCart(parseInt(item.id)) !== -1){
@@ -61,7 +60,7 @@ export const CartContextProvider=({children})=>{
     const totalPrice =()=>{
         let total=0
         cartList.forEach(element => {
-            total += (element.valor * element.quantity)
+            total += (element.price * element.quantity)
             
         });
         return total
