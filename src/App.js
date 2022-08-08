@@ -13,7 +13,7 @@ import {CartContextProvider} from './components/CartContext'
 function App() {
   return (
     <CartContextProvider>
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
 
       <Routes>
@@ -22,7 +22,7 @@ function App() {
       <Route path='/item/:id'element={<ItemDetailContainer/>}/>
       <Route path='/cart' element={<Cart/>}/>
       </Routes>   
-   </BrowserRouter>
+   </HashRouter>
    
    </CartContextProvider>
    
