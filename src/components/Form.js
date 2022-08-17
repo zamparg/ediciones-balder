@@ -1,19 +1,18 @@
-import { useContext, useState } from "react";
-import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
+import { useState, useContext } from "react";
+import { CartContext } from "../context/CartContext";
 import {doc, collection, setDoc, serverTimestamp, updateDoc, increment} from "firebase/firestore"
-import { db } from "../Utils/firebaseConfig"
+import { db } from "../services/firebaseConfig"
+
 
 const Form = () => {
+    const test = useContext(CartContext)
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState();
 
-    const test = useContext(CartContext)
-
     const createOrder =() =>{
         
-
         let itemsForDB = test.cartList.map (item => ({
             id: item.id,
             title: item.title,
@@ -21,7 +20,7 @@ const Form = () => {
             price: item.price,
             quantity: item.quantity,
         }))
-
+    
         let order ={
             buyer: {
                 email:email,
@@ -51,10 +50,10 @@ const Form = () => {
                 stock: increment(-item.quantity)
             })
         })
-}
-
+    }    
 
     return (
+    <div className="col-3"> 
         <div className="card text-bg-dark mb-3">
         <div className="card-header">{test.totalProduct()} productos</div>
         <div className="card-header fw-bold">Total: ${test.totalPrice()}</div>
@@ -80,7 +79,7 @@ const Form = () => {
             
         </form>
         </div>
-    )
+    </div>)
 }
 
 export default Form

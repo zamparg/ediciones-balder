@@ -2,11 +2,10 @@ import { Link } from 'react-router-dom';
 
 const Item =({info})=>{
     
-
         return(
     <>  
     
-     <div className="card" style={{width: '18rem'}}>
+     <div className="card" style={{width: '20%'}}>
      <Link to={`/item/${info.id}`}> <img src={info.thumbnail} className="card-img-top" alt={info.title}/></Link>
         <div className="card-body">
             <h5 className="card-title">{info.title}</h5>

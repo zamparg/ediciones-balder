@@ -1,31 +1,26 @@
 import ItemCount from "./ItemCount"
 import { Link } from "react-router-dom"
 import { useState, useContext  } from "react"
-import { CartContext} from './CartContext'
+import { CartContext} from '../context/CartContext'
 
 const ItemDetail =({item})=>{
     
-    const [itemCount, setItemCount] = useState(0);
     const test = useContext(CartContext)
+    const [itemCount, setItemCount] = useState(0);
     
-
     const onAdd = (quantity) => {
         alert('Has seleccionado ' + quantity + ' items');
         setItemCount(quantity);
         test.addToCart(item, quantity);
-
         }
     
-
-    
-
     return(
 
     <div className="row">
         <div className="col-5 col-sm">
-            <img src={item.thumbnail} className="img-fluid " alt={item.title}/>
+            <img src={item.thumbnail} className="img-fluid mx-auto d-block" alt={item.title}/>
         </div>
-            <div className="col-7 col-sm">
+        <div className="col-7 col-sm">
             <h1 className="display-4">{item.title}</h1>
             <h2 className="display-9">{item.author}</h2>
         
@@ -41,13 +36,9 @@ const ItemDetail =({item})=>{
                 <Link to="/"><button  className="btn btn-primary" >Seguir comprando</button></Link>
                 <Link to='/Cart'><button  className="btn btn-warning">Terminar mi Compra</button></Link>
                 </>
-            }
-                
+            }    
             </div>
-            
-
         </div>
-        
     </div>
     )
 }

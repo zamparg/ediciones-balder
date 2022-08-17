@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react' 
+import React, {useState} from 'react' 
 
 const ItemCount =({stock = 0, initial = 1, onAdd})=>{
     
@@ -12,10 +12,6 @@ const [quantity, setQuantity] =useState (parseInt(initial));
         if (quantity<stock){
             setQuantity(quantity+1)
     }}
-
-    /*useEffect(()=>{
-        setQuantity(parseInt(props.initial))
-    },[parseInt(props.initial)])*/
 
     return(
     <>

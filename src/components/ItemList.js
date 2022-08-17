@@ -1,7 +1,5 @@
 import Item from "./Item"
 
-
-
 const ItemList =({data})=>{
     return(
         <>
@@ -10,7 +8,5 @@ const ItemList =({data})=>{
             )}
             </>
     )}
-
-    
             
 export default ItemList
