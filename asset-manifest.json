@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ediciones-balder/static/css/main.f20a2504.css",
-    "main.js": "/ediciones-balder/static/js/main.3a68e29f.js",
+    "main.js": "/ediciones-balder/static/js/main.3751e02d.js",
     "index.html": "/ediciones-balder/index.html",
     "main.f20a2504.css.map": "/ediciones-balder/static/css/main.f20a2504.css.map",
-    "main.3a68e29f.js.map": "/ediciones-balder/static/js/main.3a68e29f.js.map"
+    "main.3751e02d.js.map": "/ediciones-balder/static/js/main.3751e02d.js.map"
   },
   "entrypoints": [
     "static/css/main.f20a2504.css",
-    "static/js/main.3a68e29f.js"
+    "static/js/main.3751e02d.js"
   ]
 }
