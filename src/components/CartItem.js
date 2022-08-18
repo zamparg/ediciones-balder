@@ -10,7 +10,7 @@ export const CartItem = ({item})=>{
     <div className="col-9">
         <div className="row card-body">
             <div className="col-3">
-                <Link to={`../item/${item.id}`}>
+                <Link to={`/ediciones-balder/item/${item.id}`}>
                 <img src={item.thumbnail} className="rounded img-thumbnail miniatura" alt={item.title}/>
                 </Link>
             </div>

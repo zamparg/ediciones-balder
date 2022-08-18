@@ -23,7 +23,7 @@ return (
                 <CartItem item={cartItem}/>))
             :<div>
                 <p>Tu carrito está vacío...</p>
-                <div className="col"><Link to="/"><button  className="btn btn-primary" >Seguir comprando</button></Link></div>
+                <div className="col"><Link to="/ediciones-balder/"><button  className="btn btn-primary" >Seguir comprando</button></Link></div>
             </div>
             }  
             

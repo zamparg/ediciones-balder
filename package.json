@@ -2,6 +2,7 @@
   "name": "ediciones-balder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zamparg.github.io/ediciones-balder",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -16,8 +17,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://zamparg.github.io/ediciones-balder.git"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

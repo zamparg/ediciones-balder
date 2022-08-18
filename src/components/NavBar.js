@@ -16,7 +16,7 @@ const NavBar = () =>{
                 <Logo/>
                 <Toggler/>
                 <NavBarItems categories={categories}/>
-                <Link to={"/Cart"}>Carrito de compras</Link>
+                <Link to={"/ediciones-balder/Cart"}>Carrito de compras</Link>
                 {
                 (test.cartList.length >0)
                     ?<CartWidget/>
