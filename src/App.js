@@ -13,7 +13,7 @@ import {CartContextProvider} from './context/CartContext'
 function App() {
   return (
     <CartContextProvider>
-    <BrowserRouter basename="/ediciones-balder/">
+    <BrowserRouter>
       <NavBar />
       <Routes>
       <Route path='/' element={<ItemListContainer/>}/>

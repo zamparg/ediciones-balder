@@ -74,7 +74,7 @@ const Form = () => {
             </div>
 
             <div className="">
-                <Link to="/ediciones-balder/"><button  type="button" className="btn btn-primary" >Seguir comprando</button></Link>
+                <Link to="/"><button  type="button" className="btn btn-primary" >Seguir comprando</button></Link>
             </div>
             
         </form>

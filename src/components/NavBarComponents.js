@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 /*NAVBAR*/
 export const Logo = () =>{
     return (
-        <Link to={"/ediciones-balder/"} className="navbar-brand" >
+        <Link to={"/"} className="navbar-brand" >
             <img src="https://res.cloudinary.com/zamparg/image/upload/v1660770028/ediciones-balder/logo192_rmdeak.png" alt="" width="30" height="30" className="d-inline-block align-text-top"/>
                 Ediciones Balder
         </Link>
@@ -26,7 +26,7 @@ export const NavBarItems = ({categories})=>{
 
                 {categories.map ((categorie)=> 
                     <li className="nav-item">
-                        <Link to={'/ediciones-balder/category/'+categorie} className="nav-link active" aria-current="page" >{categorie}</Link>
+                        <Link to={'/category/'+categorie} className="nav-link active" aria-current="page" >{categorie}</Link>
                     </li>
 
                     )

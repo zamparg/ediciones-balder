@@ -11,7 +11,7 @@ const CartWidget= () => {
   const test = useContext(CartContext)
   
   return (
-    <Link to="/ediciones-balder/Cart">
+    <Link to="/Cart">
       <Badge badgeContent={test.totalProduct()|| "" } color="secondary">
         <ShoppingCartIcon />
       </Badge>

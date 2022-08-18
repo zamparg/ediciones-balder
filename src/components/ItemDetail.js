@@ -33,8 +33,8 @@ const ItemDetail =({item})=>{
                 {itemCount ===0 
                 ?<ItemCount stock={item.stock} initial={0} onAdd={onAdd}/>
                 :<>
-                <Link to="/ediciones-balder/"><button className="btn btn-primary" >Seguir comprando</button></Link>
-                <Link to='/ediciones-balder/Cart'><button className="btn btn-warning">Terminar mi Compra</button></Link>
+                <Link to="/"><button className="btn btn-primary" >Seguir comprando</button></Link>
+                <Link to='/Cart'><button className="btn btn-warning">Terminar mi Compra</button></Link>
                 </>
             }    
             </div>

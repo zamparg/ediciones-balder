@@ -7,7 +7,7 @@ Este es un proyecto realizado para el curso de React dictado por el Prof. Alex M
 ## Preview 
 
 <img wid src="https://res.cloudinary.com/zamparg/image/upload/v1660746795/ediciones-balder/Animation_xrijwn.gif" alt="preview" width="auto"></img>
---- 
+---
 
 ## Navegación
 

@@ -6,7 +6,7 @@ const Item =({info})=>{
     <>  
     
      <div className="card" style={{width: '20%'}}>
-     <Link to={`/ediciones-balder/item/${info.id}`}> <img src={info.thumbnail} className="card-img-top" alt={info.title}/></Link>
+     <Link to={`/item/${info.id}`}> <img src={info.thumbnail} className="card-img-top" alt={info.title}/></Link>
         <div className="card-body">
             <h5 className="card-title">{info.title}</h5>
             <h6 className="card-subtitle mb-2 text-muted">{info.author}</h6>
@@ -16,7 +16,7 @@ const Item =({info})=>{
             {/* <div><ItemCount stock={parseInt(info.stock)} initial ={0}/></div>
             <AddToCart/> */}
             
-            <Link to={`/ediciones-balder/item/${info.id}`}><button  className="btn btn-secondary" >Ver más</button></Link>
+            <Link to={`/item/${info.id}`}><button  className="btn btn-secondary" >Ver más</button></Link>
         </div>
     </div>
     </>)
