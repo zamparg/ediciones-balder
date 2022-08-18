@@ -33,9 +33,9 @@ Para finalizar, el cliente debe rellenar un formulario con sus datos y obtiene u
 
 ### Librerías
 
-* FIREBASE > ^9.9.1: Firebase es un servicio de base de datos en la nube de Google y lo utilice para guardar los productos y ordenes de compra.
-* MATERIAL UI > ^5.8.6: Es una libreria de iconos. Utilizada en el Navbar.
-* REACT-ROUTER-DOM > ^6.3.0: Librería que facilita la navegacion, utilizada para generar un correcto flow de navegación.
+* FIREBASE: Firebase es un servicio de base de datos en la nube de Google y lo utilice para guardar los productos y ordenes de compra.
+* MATERIAL UI: Es una libreria de iconos. Utilizada en el Navbar.
+* REACT-ROUTER-DOM: Librería que facilita la navegacion, utilizada para generar un correcto flow de navegación.
 --- 
 
 ### Deploy
@@ -43,5 +43,6 @@ Para finalizar, el cliente debe rellenar un formulario con sus datos y obtiene u
 https://zamparg.github.io/ediciones-balder
 
 ### Contacto
+
 * [GITHUB](https://github.com/zamparg)
 * [LINKEDIN](https://www.linkedin.com/in/gast%C3%B3n-zampar/)
